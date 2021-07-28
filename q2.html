@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome-free-5.6.3-web/css/all.css">
+	<!-- Our Custom CSS style sheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Home - Simple Snippets</title>
+</head>
+	<!-- 
+	 xs<576 | 576<sm<768 | 768<md<992 | 992<lg<1200 | 1200<xl
+	-->
+	<body class="body">
+		<header>
+			<div class="p-1" id="topHeader">
+				<div class="container">
+					<div class="row" style="height: 56px;">
+						<div class="col-6">
+							<div class="row">
+								<img src="images/citrix-logo-black.png" class="img-rounded" alt="Cinque Terre" style="height:50px">
+								<img src="images/straight_line.png" class="img-rounded" alt="Cinque Terre" style="height:50px;width: 3px;margin-left:10px;margin-top: 2px;"> 
+								<img src="images/web_logo.png" class="img-rounded" alt="Cinque Terre" style="height:50px;margin-left:10px;margin-top: 3px;">  
+							</div>
+						</div>
+						
+						<!--<div class="col-1">
+							
+
+						</div>
+						<div class="col-3">
+							
+
+						</div>
+					-->
+					<div class="col-4 text-right">
+						<button class="button-ask" type="submit" href="#">Ask Question</button>
+					</div> 
+					<div class="col-2 text-right">
+
+
+						<div class="dropdown">
+							<a class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="images/profile-pic-large.png" width="40" height="40" class="rounded-circle">  </a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Profile</a>
+									<a class="dropdown-item" href="#">Setting</a>
+									<a class="dropdown-item" href="#">Logout</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</header>
+		<div class="container">
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<div class="row box" style="padding:14px; margin:10px">
+						<div class="question_head">
+							How to unstyle anchor when using bootstrap?		
+						</div>
+						<p style="font-style:italic; font-size: 12px;">
+							asked 6 months ago, by Shaunak Ram (Software Engineer)
+						</p>
+						<hr class="question_hr"/>
+						<div class="question_body">
+							<p>Bootstrap adds very nice default styles for anchors, but it makes it difficult to use <code>&lt;a&gt;</code> tag for something other than blue text. Say, I want the text to be black. One way to do that would be to add <code>class="my_class"</code> to the anchor tag, and then put <code>a.my_class{color:black}</code> rule. </p>
+							<p>But as I will soon realize bootstrap adds also style for <code>:hover</code>. So, I have to change that too. 
+								Also it changes styles for <code>outline</code>, <code>text-decoration</code>, <code>:focus</code>, etc.</p>
+
+								<p>Of course I could just read unminified version of bootstrap.css and try to understand what are all the cases I have to cover, to make sure it stays black.
+									But I perceive that there must be some easier way - I was expecting something like adding <code>class="link-unstyled"</code> or something?</p>
+
+								</div>
+								<a href="#" class=" tag question_tag" title="" rel="tag ">UI</a>
+								<a href="#" class=" tag question_tag" title="" rel="tag ">Citrix Workspace</a>
+								<hr class="question_hr"/>
+						<a href="#" class="add_a_comment"> Add a comment </a>
+							</div>
+							<p class="no_of_answer"> 2 Answers </p>
+							<div class="row box" style="padding:14px; margin:10px">
+								<p>Here is a live example: <a href="http://jsfiddle.net/S9JXC/12/" rel="noreferrer">http://jsfiddle.net/S9JXC/12/</a>
+								You can style an individual element or a group of elements. In this case they override the styles defined by bootstrap.css which is loaded before these styles and take precedence.</p>
+								<p style="width:100%"><strong>Styles defined by bootstrap.css</strong></p>
+								<pre class="code_block"><code >a {
+    color: #428BCA;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #2A6496;
+    text-decoration: underline;
+}								</code></pre>
+								<p style="width:100%"><strong>Custom styles</strong></p>
+								<pre class="code_block"><code >.style-1 {
+    color: red;
+}
+.style-1:hover, 
+.style:focus {
+    color: darkred;
+}
+.style-2 a {
+    color: #9F5F9F;
+    text-decoration: underline;
+}
+.style-2 a:hover,
+.style-2 a:focus {
+    color: #871F78;
+}
+
+&lt;a href="#"&gt;Link&lt;/a&gt;&lt;br&gt;
+&lt;a href="#" class="style-1"&gt;Link with a different style&lt;/a&gt;
+
+&lt;div class="style-2"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;					</code></pre>
+								<p class="answered_by text-right" >
+							Answered by Johan V (Software Engineer)
+						</p>
+
+						<hr class="question_hr"/>
+						<p style="width:100%;font-size: 12px;">
+						Comment Section
+						<p class="comment_ans">Your answer is correct. My problem is more general though: how do I know as a developer what I have to "unstyle". For example how do you know that you have to overwrite ":focus" but not ":visited"? I know the answer is "you can use grep on unminified bootstrap.css" but I was hoping that there is some documentation somewhere, or some simple trick like adding "link-unstyled" class (similary to list-unstyled) <span class="comment_by" >
+							 - Jonathan (Software Engineer)
+						</span></p>
+						<hr class="comment_hr"/>
+						<p class="comment_ans"><span>Read this which you should know: <a href="http://css-tricks.com/almanac/selectors/l/link/" rel="nofollow noreferrer">css-tricks.com/almanac/selectors/l/link</a> + <a href="http://css-tricks.com/almanac/selectors/l/link/" rel="nofollow noreferrer">css-tricks.com/almanac/selectors/l/link</a></span>
+						<span class="comment_by" >
+							 - Rex (Software Engineer)
+						</span></p>
+						<hr class="comment_hr"/>
+						<a href="#" class="add_a_comment"> Add a comment </a>
+						 
+							</div>
+							<div class="row box" style="padding:14px; margin:10px">
+								<p><a href="https://getbootstrap.com/docs/4.5/utilities/text/#reset-color" rel="noreferrer">Reset color</a> <code>.text-reset</code> and <a href="https://getbootstrap.com/docs/4.5/utilities/text/#text-decoration" rel="noreferrer">Text Decoration</a> <code>.text-decoration-none</code> are <a href="https://getbootstrap.com/docs/4.5/utilities/text/" rel="noreferrer">Bootstrap 4</a> options for achieving this.</p>
+								<p class="answered_by text-right" >
+							Answered by Kamlesh (Software Engineer)
+						</p>
+						<hr class="question_hr"/>
+						<p style="width:100%;font-size: 12px;">
+						Comment Section
+						<p class="comment_ans">this should be the correct answer, simply adding 2 bootstrap built-in classes solve the problem! </p> <p class=" comment_by" >
+							 - Jerry (Software Engineer)
+						</p>
+						<hr class="comment_hr"/>
+						<a href="#" class="add_a_comment"> Add a comment </a>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script src="js/custom.js"></script>
+				<script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+				<script src="bootstrap/js/popper.min.js"></script>
+				<script src="bootstrap/js/bootstrap.min.js"></script>
+			</body>
+
+			</html>

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="fontawesome-free-5.6.3-web/css/all.css">
 	<!-- Our Custom CSS style sheet -->
 	<link rel="stylesheet" href="css/style.css">
-	<title>Home - Simple Snippets</title>
+	<title>Slack-Overflow</title>
 </head>
 	<!-- 
 	 xs<576 | 576<sm<768 | 768<md<992 | 992<lg<1200 | 1200<xl
@@ -21,9 +21,11 @@
 					<div class="row" style="height: 56px;">
 						<div class="col-6">
 							<div class="row">
-								<img src="images/citrix-logo-black.png" class="img-rounded" alt="Cinque Terre" style="height:50px">
+								<a href="https://www.citrix.com/en-in/">
+								<img src="images/citrix-logo-black.png" class="img-rounded" alt="Cinque Terre" style="height:50px"></a>
 								<img src="images/straight_line.png" class="img-rounded" alt="Cinque Terre" style="height:50px;width: 3px;margin-left:10px;margin-top: 2px;"> 
-								<img src="images/slackoverflow.png" class="img-rounded" alt="Cinque Terre" style="height:50px;margin-left:10px;margin-top: 3px;">  
+								<a href="index.html">
+								<img src="images/slackoverflow.png" class="img-rounded" alt="Cinque Terre" style="height:47px;margin-left:10px;margin-top: 3px;"></a> 
 							</div>
 						</div>
 						
@@ -37,7 +39,7 @@
 						</div>
 					-->
 					<div class="col-4 text-right">
-						<button class="button-ask" type="submit" href="#">Ask Question</button>
+						<button class="button-ask" type="button" onclick="location.href='askQ.html';">Post Question</button>
 					</div> 
 					<div class="col-2 text-right">
 
@@ -116,14 +118,28 @@ catch (errMsg){
 							Answered by Bharat Vasant (Software Engineer)
 						</p>
 					</div>
-					<div class="middle">
-						<form>
-							<a href="#"><input type = "text" value = "reply" name = "dreply" id = "inner_reply"></a>
-						</form>
-					</div>
+					<p style="width:100%;font-size:22px;margin-left:10px;margin-bottom: 0px;">
+							Your answer
+						</p>
+
+						<div style="width: 96%;margin: 8px;">
+								<textarea id="wmd-input" name="post-text" class="input_title" data-post-type-id="1" cols="92" rows="15" tabindex="101" data-min-length="" style="height: 210px;"></textarea>                                                  
+                            </div>
+                            <div class="row" style="margin-bottom: 20px;">
+						<div class="col-9"></div>
+						<div class="col-3">
+					<button class="post_question" type="Submit" style="cursor: pointer;" href="#">
+                        Post your answer
+                    </button>
+                    </div>
+						
+						</div>
+					
 				</div>
 				<div class="col-1"></div>
+
 			</div>
+
 		</div>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->

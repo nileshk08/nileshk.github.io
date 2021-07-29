@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="fontawesome-free-5.6.3-web/css/all.css">
 		<!-- Our Custom CSS style sheet -->
 		<link rel="stylesheet" href="css/style.css">
-		<title>Home - Simple Snippets</title>
+		<title>Slack-Overflow</title>
 	</head>
 	<!-- 
 	 xs<576 | 576<sm<768 | 768<md<992 | 992<lg<1200 | 1200<xl
@@ -22,149 +22,263 @@
 						<div class="col-6">
 							<div class="row">
 								
-							<a href="https://www.citrix.com/en-in/">
-								<img src="images/citrix-logo-black.png" class="img-rounded" alt="Cinque Terre" style="height:50px"></a>
-								<img src="images/straight_line.png" class="img-rounded" alt="Cinque Terre" style="height:50px;width: 3px;margin-left:10px;margin-top: 2px;"> 
-								<a href="#">
-								<img src="images/slackoverflow.png" class="img-rounded" alt="Cinque Terre" style="height:50px;margin-left:10px;margin-top: 3px;"></div>
-						</div>
-						<div class="col-4 text-right">
-							<button class="button-ask" type="button" onclick="location.href='askQ.html';">Ask Question</button>
-						</div> 
-						<div class="col-2 text-right">
-							
-
-							<div class="dropdown">
-								<a class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<img src="images/profile-pic-large.png" width="40" height="40" class="rounded-circle">  </a>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item" href="#">Profile</a>
-										<a class="dropdown-item" href="#">Setting</a>
-										<a class="dropdown-item" href="#">Logout</a>
+								<a href="https://www.citrix.com/en-in/">
+									<img src="images/citrix-logo-black.png" class="img-rounded" alt="Cinque Terre" style="height:50px"></a>
+									<img src="images/straight_line.png" class="img-rounded" alt="Cinque Terre" style="height:50px;width: 3px;margin-left:10px;margin-top: 2px;"> 
+									<a href="#">
+										<img src="images/slackoverflow.png" class="img-rounded" alt="Cinque Terre" style="height:47px;margin-left:10px;margin-top: 3px;"></a>
 									</div>
-
 								</div>
-							</div>
-						</div>
-					</div>
+								<div class="col-4 text-right">
+									<button class="button-ask" type="button" onclick="location.href='askQ.html';">Post Question</button>
+								</div> 
+								<div class="col-2 text-right">
+									<div class="dropdown">
+										<a class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<img src="images/profile-pic-large.png" width="40" height="40" class="rounded-circle">  </a>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Profile</a>
+												<a class="dropdown-item" href="#">Setting</a>
+												<a class="dropdown-item" href="#">Logout</a>
+											</div>
 
-				</div>
-
-			</header>
-
-
-			<div class="container">
-				<div class="row mt-5">
-					<div class="col-2 " style="margin-top: 20px;">
-						<div class="row tag">
-							<a href="#" class="text-secondary font-weight-bold">
-								ADC 
-							</a>
-						</div>
-						<div class="row tag" >
-							<a href="#" class="text-secondary font-weight-bold">
-								SD-WAN
-							</a>
-						</div>
-						<div class="row tag" >
-							<a href="#" class="text-secondary font-weight-bold">
-								Citrix Workspace
-							</a>
-						</div>
-						<div class="row tag" >
-							<a href="#" class="text-secondary font-weight-bold">
-								ADM
-							</a>
-						</div>
-					</div>
-
-					<div class="col-7 align-self-center" id = "main_content">
-						<div class="row">
-							<form class="col-12" action="">
-								<div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
-									<div class="input-group">
-										<input type="search" id = "searchid" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
-										<div class="input-group-append">
-											<button id="button-addon1" type="button" onclick="searchit()" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
 										</div>
 									</div>
 								</div>
-							</form>
+							</div>
+
 						</div>
-						<div class="row box suggestion">
-							<div class="row">
-								<div class="col-12 suggestion question"  question-tag="auth">
-									<a href="q1.html" class="text-secondary font-weight-bold" >
-										Is it possible to enable smart card authentication for the build-in dialogs in Chrome and Firefox like in Microsoft´s Edge?
+
+					</header>
+
+
+					<div class="container">
+						<div class="row mt-5">
+							<div class="col-2 " style="margin-top: 20px;">
+								<div class="row tag">
+									<a href="#" class="text-secondary font-weight-bold">
+										ADC 
 									</a>
-									<p>
-									We have implemented an web application (ASP.NET 5) and enabled Windows Authentication in IIS.
-									<span id="dots1"  >...</span><span id="more1" >
-										The Edge browser prompts an authentication dialog which requests an username and password. The dialog provides an link "More choices" where we can authenticate via an smart card:
-										We do not know if there is a special windows configuration which provides the smart card authentication in this dialog.
-
-										Unfortunately, Google Chrome and Firefox do not provide the authentication via smart card. Only password is provided:
-
-										Question: Is it possible to enable smart card authentication for the build-in dialogs in Chrome and Firefox like in Microsoft´s Edge?
-									</span>
-									</p>
-									<a href="#" onclick="readmore(id); return false;" id="readmore1" class="nav-toggle">Read More</a>
-
 								</div>
-							</div>
-							<div class="row interaction" style="width:100%">
-								<div class="col-12">
-								<span class="vote">
-									<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="upvote" class="icon_svg-stroke icon_svg-fill" stroke-width="1.5" stroke="#666" fill="none" fill-rule="evenodd" stroke-linejoin="round"><polygon points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
-									<span class="q-text qu-whiteSpace--nowrap" style="box-sizing: border-box; font-size: 13px;">2</span>
-
-								</span>
-								<span class="vote">
-
-									<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="downvote" class="icon_svg-stroke icon_svg-fill" stroke="#666" fill="none" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="round"><polygon transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) " points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
-								</span>
+								<div class="row tag" >
+									<a href="#" class="text-secondary font-weight-bold">
+										SD-WAN
+									</a>
+								</div>
+								<div class="row tag" >
+									<a href="#" class="text-secondary font-weight-bold">
+										Citrix Workspace
+									</a>
+								</div>
+								<div class="row tag" >
+									<a href="#" class="text-secondary font-weight-bold">
+										ADM
+									</a>
+								</div>
+								<div class="row tag" >
+									<a href="#" class="text-secondary font-weight-bold">
+										CASP
+									</a>
 								</div>
 							</div>
 
+							<div class="col-7 align-self-center" id = "main_content">
+								<div class="row">
+									<form class="col-12" action="">
+										<div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+											<div class="input-group">
+												<input type="search" id = "searchid" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+												<div class="input-group-append">
+													<button id="button-addon1" type="button" onclick="searchit()" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="row box suggestion">
 
-						</div>
+									<div class="col-12 suggestion question"  question-tag="auth">
+										<a href="q1.html" class="text-secondary font-weight-bold" >
+											Is it possible to enable smart card authentication for the build-in dialogs in Chrome and Firefox like in Microsoft´s Edge?
+										</a>
+										<p>
+											We have implemented an web application (ASP.NET 5) and enabled Windows Authentication in IIS.
+											<span id="dots1"  >...</span><span id="more1" >
+												The Edge browser prompts an authentication dialog which requests an username and password. The dialog provides an link "More choices" where we can authenticate via an smart card:
+												We do not know if there is a special windows configuration which provides the smart card authentication in this dialog.
+
+												Unfortunately, Google Chrome and Firefox do not provide the authentication via smart card. Only password is provided.
+
+												
+											</span>
+										</p>
+										<a href="#" onclick="readmore(id); return false;" id="readmore1" class="nav-toggle">Read More</a>
+
+									</div>
+
+									<div class="row interaction" style="width:100%">
+										<div class="col-12">
+											<span class="vote">
+												<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="upvote" class="icon_svg-stroke icon_svg-fill" stroke-width="1.5" stroke="#666" fill="none" fill-rule="evenodd" stroke-linejoin="round"><polygon points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
+												<span class="q-text qu-whiteSpace--nowrap" style="box-sizing: border-box; font-size: 13px;">17</span>
+
+											</span>
+											<span class="vote">
+
+												<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="downvote" class="icon_svg-stroke icon_svg-fill" stroke="#666" fill="none" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="round"><polygon transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) " points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
+											</span>
+										</div>
+									</div>
 
 
-						<div class="row box suggestion">
-							<div class="col-12 suggestion" id="question:bootstrap" question-tag="bootstrap">
-								<div class="question" data-question="bootstrap"> 
-									<a href="q2.html" class="text-secondary font-weight-bold" ">
-									How to unstyle anchor when using bootstrap? </a>
-									<p>
+								</div>
 
-										Bootstrap adds very nice default styles for anchors, but it makes it difficult to use <a> tag for something other than blue text.<span id="dots2">...</span><span id="more2">
-											Say, I want the text to be black. One way to do that would be to add class="my_class" to the anchor tag, and then put a.my_class{color:black} rule.
 
-											But as I will soon realize bootstrap adds also style for :hover. So, I have to change that too. Also it changes styles for outline, text-decoration, :focus, etc.
+								<div class="row box suggestion">
+									<div class="col-12 suggestion" id="question:bootstrap" question-tag="bootstrap">
+										<div class="question" data-question="bootstrap"> 
+											<a href="q2.html" class="text-secondary font-weight-bold" ">
+											How to unstyle anchor when using bootstrap? </a>
+											<p>
 
-										Of course I could just read unminified version of bootstrap.css and try to understand what are all the cases I have to cover, to make sure it stays black. But I perceive that there must be some easier way - I was expecting something like adding class="link-unstyled" or something? </span></p>
-										<a href="#" onclick="readmore(id); return false;" id="readmore2" class="nav-toggle">Read More</a>
+												Bootstrap adds very nice default styles for anchors, but it makes it difficult to use <a> tag for something other than blue text.<span id="dots2">...</span><span id="more2">
+													Say, I want the text to be black. One way to do that would be to add class="my_class" to the anchor tag, and then put a.my_class{color:black} rule.
+
+													But as I will soon realize bootstrap adds also style for :hover. So, I have to change that too. Also it changes styles for outline, text-decoration, :focus, etc.
+
+												Of course I could just read unminified version of bootstrap.css and try to understand what are all the cases I have to cover, to make sure it stays black. But I perceive that there must be some easier way - I was expecting something like adding class="link-unstyled" or something? </span></p>
+												<a href="#" onclick="readmore(id); return false;" id="readmore2" class="nav-toggle">Read More</a>
+										</div>
+									</div>
+
+										<div>
+											<div class="col align-self-end">
+											</div>
+										</div>
+									
+
+									<div class="row interaction" style="width:100%">
+										<div class="col-12">
+											<span class="vote">
+												<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="upvote" class="icon_svg-stroke icon_svg-fill" stroke-width="1.5" stroke="#666" fill="none" fill-rule="evenodd" stroke-linejoin="round"><polygon points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
+												<span class="q-text qu-whiteSpace--nowrap" style="box-sizing: border-box; font-size: 13px;">28</span>
+
+											</span>
+											<span class="vote">
+
+												<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="downvote" class="icon_svg-stroke icon_svg-fill" stroke="#666" fill="none" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="round"><polygon transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) " points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="row box suggestion">
+									<div class="col-12 suggestion" id="question:bootstrap" question-tag="bootstrap">
+										<div class="question" data-question="bootstrap">
+											<a href="q2.html" class="text-secondary font-weight-bold" ">
+											Dynamic creation of jenkins jobs using job DSL to run amigo test cases. </a>
+											<p>
+
+												1)use the job DSL API on a particular job configuration. 2)Most java functions can be implemented here depending upon your requirement.<span id="dots3">...</span><span id="more3">
+												3)Most preferable way i found to run jobs is to SSH to the device and run a loop on a textfile with all job names and read it , extract values needed and pass it to the jenkins device. </span></p>
+												<a href="#" onclick="readmore(id); return false;" id="readmore3" class="nav-toggle">Read More</a>
+										</div>
+									</div>
+
+
+										<div>
+											<div class="col align-self-end">
+											</div>
+										</div>
+										<div class="row interaction" style="width:100%">
+										<div class="col-12">
+											<span class="vote">
+												<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="upvote" class="icon_svg-stroke icon_svg-fill" stroke-width="1.5" stroke="#666" fill="none" fill-rule="evenodd" stroke-linejoin="round"><polygon points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
+												<span class="q-text qu-whiteSpace--nowrap" style="box-sizing: border-box; font-size: 13px;">13</span>
+
+											</span>
+											<span class="vote">
+
+												<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="downvote" class="icon_svg-stroke icon_svg-fill" stroke="#666" fill="none" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="round"><polygon transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) " points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
+											</span>
+										</div>
 									</div>
 								</div>
 
+								<div class="row box suggestion">
+									<div class="col-12 suggestion" id="question:WAN" question-tag="bootstrap">
+										<div class="question" data-question="WAN"> 
+											<a href="#" class="text-secondary font-weight-bold" ">
+											Why should I integrate with WAN if I already use my own and/or third-party instrumentation tools? </a>
+											<p>
 
-								<div>
+												WAN does not compete with alternative solutions, but compliments them. Some of the reports may overlap,<span id="dots4">...</span><span id="more4">
+												but some are unique, so you still gain insight value by integrating with WAN. WAN reports/data are available/accesible to all citrites, so it is easy to share and gain additional value within product/solution groups. WAN data is stored in Citrix-controlled storages and third-party providers cannot "sneak-peak" at it.
+A well know third-party solution is Google Analytics (GA). At this time GA provides many reports (more than WAN), but it does not have heatmaps and page statistics reports like WAN's. GA targets as wide audience as possible, whereas WAN specifically targets Citrix products and serves their unique needs. GA uses chatty interface with frequent POSTs back to the "mothership" whereas WAN accumulates data on the client and does bulk-load which is more network-efficient. Safety is also an important factor - if you send your users names to Google you can never be sure how exactly they be used. This is not to discourage teams from using GA, which is an excellent platform, but to be open-minded and careful at the same time. There is no need to lock-in - use whatever tools help your product to get better. </span></p>
+												<a href="#" onclick="readmore(id); return false;" id="readmore4" class="nav-toggle">Read More</a>
+										</div>
+									</div>
 
-								</div>
 
-								<div>
-									<div class="col align-self-end">
+										<div>
+											<div class="col align-self-end">
+											</div>
+										</div>
+										<div class="row interaction" style="width:100%">
+										<div class="col-12">
+											<span class="vote">
+												<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="upvote" class="icon_svg-stroke icon_svg-fill" stroke-width="1.5" stroke="#666" fill="none" fill-rule="evenodd" stroke-linejoin="round"><polygon points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
+												<span class="q-text qu-whiteSpace--nowrap" style="box-sizing: border-box; font-size: 13px;">19</span>
+
+											</span>
+											<span class="vote">
+
+												<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="downvote" class="icon_svg-stroke icon_svg-fill" stroke="#666" fill="none" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="round"><polygon transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) " points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
+											</span>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
 
-						<!-- Optional JavaScript -->
-						<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-						<script src="js/custom.js"></script>
-						<script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
-						<script src="bootstrap/js/popper.min.js"></script>
-						<script src="bootstrap/js/bootstrap.min.js"></script>
-					</body>
+								<div class="row box suggestion">
+									<div class="col-12 suggestion" id="question:bootstrap" question-tag="bootstrap">
+										<div class="question" data-question="bootstrap"> 
+											<a href="#" class="text-secondary font-weight-bold" ">
+											Run multiple jenkins jobs with a single click. </a>
+											<p>
 
-					</html>
+												1) put all your jobs under a single folder and name the folder.<span id="dots2">...</span><span id="more2">
+												2) use a pipeline script on a new job and configure the script to just run all jobs inside the folder using jenkins.instance.getItemsByFullName(). </span></p>
+												<a href="#" onclick="readmore(id); return false;" id="readmore2" class="nav-toggle">Read More</a>
+										</div>
+									</div>
+
+
+										<div>
+											<div class="col align-self-end">
+											</div>
+										</div>
+										<div class="row interaction" style="width:100%">
+										<div class="col-12">
+											<span class="vote">
+												<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="upvote" class="icon_svg-stroke icon_svg-fill" stroke-width="1.5" stroke="#666" fill="none" fill-rule="evenodd" stroke-linejoin="round"><polygon points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
+												<span class="q-text qu-whiteSpace--nowrap" style="box-sizing: border-box; font-size: 13px;">7</span>
+
+											</span>
+											<span class="vote">
+
+												<svg width="24px" height="24px" viewBox="0 0 24 24"><g id="downvote" class="icon_svg-stroke icon_svg-fill" stroke="#666" fill="none" stroke-width="1.5" fill-rule="evenodd" stroke-linejoin="round"><polygon transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) " points="12 4 3 15 9 15 9 20 15 20 15 15 21 15"></polygon></g></svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								</div>
+								
+
+								<!-- Optional JavaScript -->
+								<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+								<script src="js/custom.js"></script>
+								<script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+								<script src="bootstrap/js/popper.min.js"></script>
+								<script src="bootstrap/js/bootstrap.min.js"></script>
+							</body>
+
+							</html>

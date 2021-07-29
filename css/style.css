@@ -178,6 +178,9 @@ background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }
 #more1 {display: none;}
 #more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
+#more5 {display: none;}
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;

@@ -22,7 +22,32 @@ var qna = new Map([
   ,
     "q2.html",
   `Bootstrap adds very nice default styles for anchors, but it makes it difficult to use <a> tag for something other than blue text.`
-  ]]
+  ]],
+
+  [
+    `Dynamic creation of jenkins jobs using job DSL to run amigo test cases.`,[
+    `3)Most preferable way i found to run jobs is to SSH to the device and run a loop on a textfile with all job names and read it , extract values needed and pass it to the jenkins device.`,
+    `#`,
+    `1)use the job DSL API on a particular job configuration. 2)Most java functions can be implemented here depending upon your requirement.`
+    ]
+  ],
+
+  [
+    `Why should I integrate with WAN if I already use my own and/or third-party instrumentation tools? `,[
+      `but some are unique, so you still gain insight value by integrating with WAN. WAN reports/data are available/accesible to all citrites, so it is easy to share and gain additional value within product/solution groups. WAN data is stored in Citrix-controlled storages and third-party providers cannot "sneak-peak" at it.
+      A well know third-party solution is Google Analytics (GA). At this time GA provides many reports (more than WAN), but it does not have heatmaps and page statistics reports like WAN's. GA targets as wide audience as possible, whereas WAN specifically targets Citrix products and serves their unique needs. GA uses chatty interface with frequent POSTs back to the "mothership" whereas WAN accumulates data on the client and does bulk-load which is more network-efficient. Safety is also an important factor - if you send your users names to Google you can never be sure how exactly they be used. This is not to discourage teams from using GA, which is an excellent platform, but to be open-minded and careful at the same time. There is no need to lock-in - use whatever tools help your product to get better.`,
+      `#`,
+      `WAN does not compete with alternative solutions, but compliments them. Some of the reports may overlap,`
+    ]
+  ],
+
+  [
+    `Run multiple jenkins jobs with a single click.`,[
+      `2) use a pipeline script on a new job and configure the script to just run all jobs inside the folder using jenkins.instance.getItemsByFullName().`,
+      `#`,
+      `1) put all your jobs under a single folder and name the folder.`
+    ]
+  ]
 
 ]);
 

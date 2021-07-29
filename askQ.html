@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome-free-5.6.3-web/css/all.css">
+	<!-- Our Custom CSS style sheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Home - Simple Snippets</title>
+</head>
+	<!-- 
+	 xs<576 | 576<sm<768 | 768<md<992 | 992<lg<1200 | 1200<xl
+	-->
+	<body class="body">
+		<header>
+			<div class="p-1" id="topHeader">
+				<div class="container">
+					<div class="row" style="height: 56px;">
+						<div class="col-6">
+							<div class="row">
+								<img src="images/citrix-logo-black.png" class="img-rounded" alt="Cinque Terre" style="height:50px">
+								<img src="images/straight_line.png" class="img-rounded" alt="Cinque Terre" style="height:50px;width: 3px;margin-left:10px;margin-top: 2px;"> 
+								<img src="images/web_logo.png" class="img-rounded" alt="Cinque Terre" style="height:50px;margin-left:10px;margin-top: 3px;">  
+							</div>
+						</div>
+						
+						<!--<div class="col-1">
+							
+
+						</div>
+						<div class="col-3">
+							
+
+						</div>
+					-->
+					<div class="col-4 text-right">
+						
+					</div> 
+					<div class="col-2 text-right">
+
+
+						<div class="dropdown">
+							<a class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="images/profile-pic-large.png" width="40" height="40" class="rounded-circle">  </a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Profile</a>
+									<a class="dropdown-item" href="#">Setting</a>
+									<a class="dropdown-item" href="#">Logout</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</header>
+		<div class="container">
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<p style="font-size: 50px; margin-left: 20px;"> Ask a question </p>
+					<div class="row box" style="padding:14px; margin:10px">
+						<p style="font-size: 20px;width: 100%;margin-bottom: -5px;"> Title </p>
+						<p style="font-size:13px;width: 100%;font-style: italic; margin-bottom: 4px;"> Be specific </p>
+						<div style="width:100%">
+                                <input id="title" name="title" type="text" maxlength="300" tabindex="100" placeholder="e.g. Is there an R function for finding the index of an element in a vector?" class="input_title" value="" data-min-length="15" data-max-length="150" autocomplete="off">
+                               
+                            </div>
+						<p style="font-size:20px;width: 100%;margin-bottom: -5px;"> Body </p>
+						<p style="font-size: 13px;;width: 100%;font-style: italic;margin-bottom: 4px;">Please include all the information needed to answer this question</p>
+						<div style="width:100%">
+								<textarea id="wmd-input" name="post-text" class="input_title" data-post-type-id="1" cols="92" rows="15" tabindex="101" data-min-length="" style="height: 210px;"></textarea>                                                  
+                            </div>
+                        <p style="font-size:20px;width: 100%;margin-bottom: -5px;"> Tags </p>
+                        <p style="font-size: 13px;;width: 100%;font-style: italic;margin-bottom: 4px;">Add some tags to describe what your question is about</p>
+                        <div style="width:100%">
+                        	<input type="text" autocomplete="off" tabindex="103" placeholder="e.g. (ADC; Workspace; Networking)" id="tageditor-replacing-tagnames--input" class="input_title" >
+                        </div>
+
+					</div>
+					<div class="row" style="margin-bottom: 20px;">
+						<div class="col-10"></div>
+						<div class="col-1">
+					<button class="post_question" type="Submit" style="cursor: pointer;" href="#">
+                        Submit
+                    </button>
+                    </div>
+                    </div>
+				</div>
+				<div class="col-1"></div>
+			</div>
+		</div>
+
+		<script src="js/custom.js"></script>
+		<script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+		<script src="bootstrap/js/popper.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+
+	</html>

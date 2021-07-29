@@ -181,6 +181,11 @@ background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 #more3 {display: none;}
 #more4 {display: none;}
 #more5 {display: none;}
+#dots1 {display: inline;}
+#dots2 {display: inline;}
+#dots3 {display: inline;}
+#dots4 {display: inline;}
+#dots5 {display: inline;}
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
